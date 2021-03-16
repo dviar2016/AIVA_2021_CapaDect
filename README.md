@@ -1,4 +1,4 @@
-# circuits_detection_lib
+# CapaDect
 
 Se pretende la implementación de un sistema, que mediante visión artificial localice los condensadores en placas de circuitos integrados para su procesamiento separado. De ahora en adelante se va a referir al sistema con el nombre de CapaDect.
 
