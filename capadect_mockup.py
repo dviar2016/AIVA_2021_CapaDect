@@ -18,6 +18,7 @@ class capacitor_detector():
     def create_txt(self):
 
         print("txt file was created")
+        return True
 
 class preprocessing_image():
     def __init__(self,img):
@@ -26,7 +27,5 @@ class preprocessing_image():
 
     def resize(self):
         print('The image was resized successfully')
+        return True
 
-
-
-capacitor_detector("/image")
