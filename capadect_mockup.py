@@ -26,6 +26,7 @@ class preprocessing_image():
         self.resize()
 
     def resize(self):
+
         print('The image was resized successfully')
         return True
 
