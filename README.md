@@ -14,5 +14,14 @@ CapaDect se ejecuta en la version de python 3.8.5, utiliza una serie de módulos
 1. Para instalar pyhton 3.8.5 visitar www.python.org
 2. Para instalar las dependecias es suficiente con ejecutar el siguiente comando en el directorio donde se encuentra el archivo requirements.txt
     pip install -r requirements.txt
-3. Para descargar el programa a través de GitHub hay dos formas. 1) Utilizar git clone https://github.com/dviar2016/AIVA_2021_CapaDect/    || La otra forma es directamente descargar el repositorio a través de github https://github.com/dviar2016/AIVA_2021_CapaDect/
-4. Una vez instaladas las dependencias y descargados los ficheros, hay que ejecutar el programa. Para ello sobra con acceder al directorio scripts y lanzar el siguiente comando python frontend.py (windows) python3 frontend.py (linux).
+3. Para descargar el programa a través de GitHub hay dos formas. 
+    1) Utilizar git clone https://github.com/dviar2016/AIVA_2021_CapaDect/    || 
+    2) Descargar el repositorio a través de github https://github.com/dviar2016/AIVA_2021_CapaDect/
+
+4. Una vez instaladas las dependencias y descargados los ficheros, hay que ejecutar el programa. Para ello sobra con acceder al directorio scripts y lanzar el siguiente comando        python frontend.py (windows) 
+     python3 frontend.py (linux).
+
+# Ejecución de los test implementados
+Para ser conscientes de la correcta ejecución del programa, se han implementado un test contenido en la carpeta scripts. Este trata de evaluar por separado los diferentes métodos que conforman las clases empleadas, para comprobar el correcto funcionamiento de estas. Su ejecución será con el siguiente comando:
+    python backend_test.py(windows) 
+    python3 backend_test.py (linux) 
