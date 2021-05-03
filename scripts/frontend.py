@@ -1,22 +1,26 @@
 
 import backend
-
+import numpy as np
+import glob
 class Application():
 
-    def __init__(self,image_path,model_path,weights_path):
-        self.image_path = image_path
-        self.model_path = model_path
-        self.weights_path = weights_path
+    def __init__(self):
+        self.image_path = ""
+        self.dependencies = backend.load_files()
 
-    def main(self):
-        x = backend.load_files(self.image_path,self.model_path,self.weights_path)
-        image = x.read_image()
-        model = x.load_model()
-        weights = x.load_weights()
+        self.model = self.dependencies.load_model()
 
-        inference_model = backend.capacitor_detector(image,model)
-        roi = inference_model.detect_capacitor()
+    def main(self,image_path):
+        self.dependencies.image_path =image_path
+        self.image = self.dependencies.read_image()
 
+
+        inference_model = backend.capacitor_detector(self.image,self.model)
+        roi,roi_score = inference_model.detect_capacitor()
+        roi_index = np.argwhere(roi_score>0.25)
+        print(roi_index)
+
+        roi = roi[roi_index]
         if len(roi) >= 15:
             backend.output_files(roi).create_txt()
 
@@ -25,4 +29,8 @@ class Application():
 
 
 
-Application("quiron.png","","").main()
+if __name__=="__main__":
+    image_path = glob.glob("images/*.jpg")
+    aplication = Application()
+    for i in image_path:
+        aplication.main(i)
