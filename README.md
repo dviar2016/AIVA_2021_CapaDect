@@ -7,16 +7,15 @@ El software CapaDect será capaz de reconocer a través de técnicas avanzadas d
 ![image](https://user-images.githubusercontent.com/80623121/111328931-fa5f3480-866e-11eb-9369-ae939697a2e0.png)
 
 # Como Instalar CapaDect
-
-
-CapaDect se ejecuta en la version de python 3.8.5, utiliza una serie de módulos necesarios para su ejecución. Estas dependencias pueden ser encontradas en el fichero requirements.txt de nuestro github.
-
-1. Para instalar pyhton 3.8.5 visitar www.python.org
-2. Para instalar las dependecias es suficiente con ejecutar el siguiente comando en el directorio donde se encuentra el archivo requirements.txt
-    pip install -r requirements.txt
-3. Para descargar el programa a través de GitHub hay dos formas. 
-    1) Utilizar git clone https://github.com/dviar2016/AIVA_2021_CapaDect/
-    2) Descargar el repositorio a través de github https://github.com/dviar2016/AIVA_2021_CapaDect/
+# Instalación Github
+1.	Pyhton 3.8.5:
+	 1) www.python.org .
+2.	Para instalar las dependecias es suficiente con ejecutar el siguiente comando en el directorio donde se encuentra el archivo requirements.txt pip install -r requirements.txt
+3.	Para descargar el programa a través de GitHub hay dos formas.
+	1) Utilizar git clone:	
+	    https://github.com/dviar2016/AIVA_2021_CapaDect/
+	2) Descargar el repositorio a través de github
+	    https://github.com/dviar2016/AIVA_2021_CapaDect/
 
 4. Una vez instaladas las dependencias y descargados los ficheros, hay que ejecutar el programa. Para ello sobra con acceder al directorio scripts y lanzar el siguiente comando        python frontend.py (windows) 
      python3 frontend.py (linux).
