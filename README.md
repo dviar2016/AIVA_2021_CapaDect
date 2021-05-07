@@ -26,16 +26,16 @@ CapaDect ofrece una instalación docker para facilitar a sus clientes un ambient
 1. Para inicializar la descargar de los archivos lanzar el siguiente comando.
 	1) docker pull dviar/aiva_2021_capadect:aiva_2021_capadect
 2. Este comando inicializará la descarga de todas las dependencias del programa, tanto librerías como código propio. Una vez descargado, comprobarla lista de imágenes en el sistema con:
-	2) docker image ls –a
+	1) docker image ls –a
 3. Cuando veamos la imagen con el name tag CapaDect, se procede a copiar la id de la imagen. Una vez se lanzaeste comando tenemos un container de nuestra imagen.
-	3) docker create -it 52b4f4afdf87
+	1) docker create -it 52b4f4afdf87
 4.Solo quedaría localizar el nombre del container y lanzar los siguientes comandos.
-	4)docker container ls –a
-	5) docker start d4f9c1734d72
-	6) docker attach d4f9c1734d72
+	1)docker container ls –a
+	2) docker start d4f9c1734d72
+	3) docker attach d4f9c1734d72
 
 7. Únicamente quedaría presente lanzar el archivo. Para ello ir lanzar el siguiente comando:
-	7) python3 home/capadect/AIVA_2021_CapaDect/scripts/frontend.py
+	1) python3 home/capadect/AIVA_2021_CapaDect/scripts/frontend.py
 
 
 # Ejecución de los test implementados
